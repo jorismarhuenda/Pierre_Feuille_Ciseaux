@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECA02E0C274BB0B600197680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E0B274BB0B600197680 /* AppDelegate.swift */; };
+		ECA02E0E274BB0B600197680 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E0D274BB0B600197680 /* SceneDelegate.swift */; };
+		ECA02E10274BB0B600197680 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E0F274BB0B600197680 /* ViewController.swift */; };
+		ECA02E13274BB0B600197680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA02E11274BB0B600197680 /* Main.storyboard */; };
+		ECA02E16274BB0B600197680 /* Pierre_Feuille_Ciseaux.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E14274BB0B600197680 /* Pierre_Feuille_Ciseaux.xcdatamodeld */; };
+		ECA02E18274BB0BD00197680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA02E17274BB0BD00197680 /* Assets.xcassets */; };
+		ECA02E1B274BB0BD00197680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA02E19274BB0BD00197680 /* LaunchScreen.storyboard */; };
+		ECA02E26274BB0BE00197680 /* Pierre_Feuille_CiseauxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E25274BB0BE00197680 /* Pierre_Feuille_CiseauxTests.swift */; };
+		ECA02E30274BB0BE00197680 /* Pierre_Feuille_CiseauxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E2F274BB0BE00197680 /* Pierre_Feuille_CiseauxUITests.swift */; };
+		ECA02E32274BB0BE00197680 /* Pierre_Feuille_CiseauxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E31274BB0BE00197680 /* Pierre_Feuille_CiseauxUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECA02E22274BB0BE00197680 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECA02E00274BB0B600197680 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECA02E07274BB0B600197680;
+			remoteInfo = Pierre_Feuille_Ciseaux;
+		};
+		ECA02E2C274BB0BE00197680 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECA02E00274BB0B600197680 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECA02E07274BB0B600197680;
+			remoteInfo = Pierre_Feuille_Ciseaux;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECA02E08274BB0B600197680 /* Pierre_Feuille_Ciseaux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pierre_Feuille_Ciseaux.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA02E0B274BB0B600197680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECA02E0D274BB0B600197680 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ECA02E0F274BB0B600197680 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECA02E12274BB0B600197680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECA02E15274BB0B600197680 /* Pierre_Feuille_Ciseaux.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pierre_Feuille_Ciseaux.xcdatamodel; sourceTree = "<group>"; };
+		ECA02E17274BB0BD00197680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECA02E1A274BB0BD00197680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECA02E1C274BB0BD00197680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA02E21274BB0BE00197680 /* Pierre_Feuille_CiseauxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pierre_Feuille_CiseauxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA02E25274BB0BE00197680 /* Pierre_Feuille_CiseauxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pierre_Feuille_CiseauxTests.swift; sourceTree = "<group>"; };
+		ECA02E2B274BB0BE00197680 /* Pierre_Feuille_CiseauxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pierre_Feuille_CiseauxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA02E2F274BB0BE00197680 /* Pierre_Feuille_CiseauxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pierre_Feuille_CiseauxUITests.swift; sourceTree = "<group>"; };
+		ECA02E31274BB0BE00197680 /* Pierre_Feuille_CiseauxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pierre_Feuille_CiseauxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECA02E05274BB0B600197680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA02E1E274BB0BE00197680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA02E28274BB0BE00197680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECA02DFF274BB0B600197680 = {
+			isa = PBXGroup;
+			children = (
+				ECA02E0A274BB0B600197680 /* Pierre_Feuille_Ciseaux */,
+				ECA02E24274BB0BE00197680 /* Pierre_Feuille_CiseauxTests */,
+				ECA02E2E274BB0BE00197680 /* Pierre_Feuille_CiseauxUITests */,
+				ECA02E09274BB0B600197680 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECA02E09274BB0B600197680 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECA02E08274BB0B600197680 /* Pierre_Feuille_Ciseaux.app */,
+				ECA02E21274BB0BE00197680 /* Pierre_Feuille_CiseauxTests.xctest */,
+				ECA02E2B274BB0BE00197680 /* Pierre_Feuille_CiseauxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECA02E0A274BB0B600197680 /* Pierre_Feuille_Ciseaux */ = {
+			isa = PBXGroup;
+			children = (
+				ECA02E0B274BB0B600197680 /* AppDelegate.swift */,
+				ECA02E0D274BB0B600197680 /* SceneDelegate.swift */,
+				ECA02E0F274BB0B600197680 /* ViewController.swift */,
+				ECA02E11274BB0B600197680 /* Main.storyboard */,
+				ECA02E17274BB0BD00197680 /* Assets.xcassets */,
+				ECA02E19274BB0BD00197680 /* LaunchScreen.storyboard */,
+				ECA02E1C274BB0BD00197680 /* Info.plist */,
+				ECA02E14274BB0B600197680 /* Pierre_Feuille_Ciseaux.xcdatamodeld */,
+			);
+			path = Pierre_Feuille_Ciseaux;
+			sourceTree = "<group>";
+		};
+		ECA02E24274BB0BE00197680 /* Pierre_Feuille_CiseauxTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECA02E25274BB0BE00197680 /* Pierre_Feuille_CiseauxTests.swift */,
+			);
+			path = Pierre_Feuille_CiseauxTests;
+			sourceTree = "<group>";
+		};
+		ECA02E2E274BB0BE00197680 /* Pierre_Feuille_CiseauxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ECA02E2F274BB0BE00197680 /* Pierre_Feuille_CiseauxUITests.swift */,
+				ECA02E31274BB0BE00197680 /* Pierre_Feuille_CiseauxUITestsLaunchTests.swift */,
+			);
+			path = Pierre_Feuille_CiseauxUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECA02E07274BB0B600197680 /* Pierre_Feuille_Ciseaux */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA02E35274BB0BE00197680 /* Build configuration list for PBXNativeTarget "Pierre_Feuille_Ciseaux" */;
+			buildPhases = (
+				ECA02E04274BB0B600197680 /* Sources */,
+				ECA02E05274BB0B600197680 /* Frameworks */,
+				ECA02E06274BB0B600197680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pierre_Feuille_Ciseaux;
+			productName = Pierre_Feuille_Ciseaux;
+			productReference = ECA02E08274BB0B600197680 /* Pierre_Feuille_Ciseaux.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECA02E20274BB0BE00197680 /* Pierre_Feuille_CiseauxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA02E38274BB0BE00197680 /* Build configuration list for PBXNativeTarget "Pierre_Feuille_CiseauxTests" */;
+			buildPhases = (
+				ECA02E1D274BB0BE00197680 /* Sources */,
+				ECA02E1E274BB0BE00197680 /* Frameworks */,
+				ECA02E1F274BB0BE00197680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA02E23274BB0BE00197680 /* PBXTargetDependency */,
+			);
+			name = Pierre_Feuille_CiseauxTests;
+			productName = Pierre_Feuille_CiseauxTests;
+			productReference = ECA02E21274BB0BE00197680 /* Pierre_Feuille_CiseauxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECA02E2A274BB0BE00197680 /* Pierre_Feuille_CiseauxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA02E3B274BB0BE00197680 /* Build configuration list for PBXNativeTarget "Pierre_Feuille_CiseauxUITests" */;
+			buildPhases = (
+				ECA02E27274BB0BE00197680 /* Sources */,
+				ECA02E28274BB0BE00197680 /* Frameworks */,
+				ECA02E29274BB0BE00197680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA02E2D274BB0BE00197680 /* PBXTargetDependency */,
+			);
+			name = Pierre_Feuille_CiseauxUITests;
+			productName = Pierre_Feuille_CiseauxUITests;
+			productReference = ECA02E2B274BB0BE00197680 /* Pierre_Feuille_CiseauxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECA02E00274BB0B600197680 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					ECA02E07274BB0B600197680 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					ECA02E20274BB0BE00197680 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = ECA02E07274BB0B600197680;
+					};
+					ECA02E2A274BB0BE00197680 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = ECA02E07274BB0B600197680;
+					};
+				};
+			};
+			buildConfigurationList = ECA02E03274BB0B600197680 /* Build configuration list for PBXProject "Pierre_Feuille_Ciseaux" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECA02DFF274BB0B600197680;
+			productRefGroup = ECA02E09274BB0B600197680 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECA02E07274BB0B600197680 /* Pierre_Feuille_Ciseaux */,
+				ECA02E20274BB0BE00197680 /* Pierre_Feuille_CiseauxTests */,
+				ECA02E2A274BB0BE00197680 /* Pierre_Feuille_CiseauxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECA02E06274BB0B600197680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA02E1B274BB0BD00197680 /* LaunchScreen.storyboard in Resources */,
+				ECA02E18274BB0BD00197680 /* Assets.xcassets in Resources */,
+				ECA02E13274BB0B600197680 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA02E1F274BB0BE00197680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA02E29274BB0BE00197680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECA02E04274BB0B600197680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA02E16274BB0B600197680 /* Pierre_Feuille_Ciseaux.xcdatamodeld in Sources */,
+				ECA02E10274BB0B600197680 /* ViewController.swift in Sources */,
+				ECA02E0C274BB0B600197680 /* AppDelegate.swift in Sources */,
+				ECA02E0E274BB0B600197680 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA02E1D274BB0BE00197680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA02E26274BB0BE00197680 /* Pierre_Feuille_CiseauxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA02E27274BB0BE00197680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA02E30274BB0BE00197680 /* Pierre_Feuille_CiseauxUITests.swift in Sources */,
+				ECA02E32274BB0BE00197680 /* Pierre_Feuille_CiseauxUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECA02E23274BB0BE00197680 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECA02E07274BB0B600197680 /* Pierre_Feuille_Ciseaux */;
+			targetProxy = ECA02E22274BB0BE00197680 /* PBXContainerItemProxy */;
+		};
+		ECA02E2D274BB0BE00197680 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECA02E07274BB0B600197680 /* Pierre_Feuille_Ciseaux */;
+			targetProxy = ECA02E2C274BB0BE00197680 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECA02E11274BB0B600197680 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA02E12274BB0B600197680 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECA02E19274BB0BD00197680 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA02E1A274BB0BD00197680 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECA02E33274BB0BE00197680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECA02E34274BB0BE00197680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECA02E36274BB0BE00197680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B64MGY93X6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pierre_Feuille_Ciseaux/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jorismarhuenda.Pierre-Feuille-Ciseaux";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECA02E37274BB0BE00197680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B64MGY93X6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pierre_Feuille_Ciseaux/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jorismarhuenda.Pierre-Feuille-Ciseaux";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECA02E39274BB0BE00197680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B64MGY93X6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jorismarhuenda.Pierre-Feuille-CiseauxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pierre_Feuille_Ciseaux.app/Pierre_Feuille_Ciseaux";
+			};
+			name = Debug;
+		};
+		ECA02E3A274BB0BE00197680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B64MGY93X6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jorismarhuenda.Pierre-Feuille-CiseauxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pierre_Feuille_Ciseaux.app/Pierre_Feuille_Ciseaux";
+			};
+			name = Release;
+		};
+		ECA02E3C274BB0BE00197680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B64MGY93X6;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jorismarhuenda.Pierre-Feuille-CiseauxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pierre_Feuille_Ciseaux;
+			};
+			name = Debug;
+		};
+		ECA02E3D274BB0BE00197680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B64MGY93X6;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jorismarhuenda.Pierre-Feuille-CiseauxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pierre_Feuille_Ciseaux;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECA02E03274BB0B600197680 /* Build configuration list for PBXProject "Pierre_Feuille_Ciseaux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA02E33274BB0BE00197680 /* Debug */,
+				ECA02E34274BB0BE00197680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA02E35274BB0BE00197680 /* Build configuration list for PBXNativeTarget "Pierre_Feuille_Ciseaux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA02E36274BB0BE00197680 /* Debug */,
+				ECA02E37274BB0BE00197680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA02E38274BB0BE00197680 /* Build configuration list for PBXNativeTarget "Pierre_Feuille_CiseauxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA02E39274BB0BE00197680 /* Debug */,
+				ECA02E3A274BB0BE00197680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA02E3B274BB0BE00197680 /* Build configuration list for PBXNativeTarget "Pierre_Feuille_CiseauxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA02E3C274BB0BE00197680 /* Debug */,
+				ECA02E3D274BB0BE00197680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ECA02E14274BB0B600197680 /* Pierre_Feuille_Ciseaux.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ECA02E15274BB0B600197680 /* Pierre_Feuille_Ciseaux.xcdatamodel */,
+			);
+			currentVersion = ECA02E15274BB0B600197680 /* Pierre_Feuille_Ciseaux.xcdatamodel */;
+			path = Pierre_Feuille_Ciseaux.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ECA02E00274BB0B600197680 /* Project object */;
+}
