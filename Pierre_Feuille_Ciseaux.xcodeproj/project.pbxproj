@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		ECA02E0C274BB0B600197680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E0B274BB0B600197680 /* AppDelegate.swift */; };
 		ECA02E0E274BB0B600197680 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E0D274BB0B600197680 /* SceneDelegate.swift */; };
-		ECA02E10274BB0B600197680 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E0F274BB0B600197680 /* ViewController.swift */; };
 		ECA02E13274BB0B600197680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA02E11274BB0B600197680 /* Main.storyboard */; };
 		ECA02E16274BB0B600197680 /* Pierre_Feuille_Ciseaux.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E14274BB0B600197680 /* Pierre_Feuille_Ciseaux.xcdatamodeld */; };
 		ECA02E18274BB0BD00197680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA02E17274BB0BD00197680 /* Assets.xcassets */; };
@@ -17,6 +16,11 @@
 		ECA02E26274BB0BE00197680 /* Pierre_Feuille_CiseauxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E25274BB0BE00197680 /* Pierre_Feuille_CiseauxTests.swift */; };
 		ECA02E30274BB0BE00197680 /* Pierre_Feuille_CiseauxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E2F274BB0BE00197680 /* Pierre_Feuille_CiseauxUITests.swift */; };
 		ECA02E32274BB0BE00197680 /* Pierre_Feuille_CiseauxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E31274BB0BE00197680 /* Pierre_Feuille_CiseauxUITestsLaunchTests.swift */; };
+		ECA02E43274BB14600197680 /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E42274BB14600197680 /* GameEngine.swift */; };
+		ECA02E45274BB17500197680 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E44274BB17500197680 /* Player.swift */; };
+		ECA02E47274BB4D800197680 /* ExtensionGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E46274BB4D800197680 /* ExtensionGameController.swift */; };
+		ECA02E49274BB50B00197680 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E48274BB50B00197680 /* GameController.swift */; };
+		ECA02E4B274BB8CC00197680 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E4A274BB8CC00197680 /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,6 @@
 		ECA02E08274BB0B600197680 /* Pierre_Feuille_Ciseaux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pierre_Feuille_Ciseaux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA02E0B274BB0B600197680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECA02E0D274BB0B600197680 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ECA02E0F274BB0B600197680 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECA02E12274BB0B600197680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECA02E15274BB0B600197680 /* Pierre_Feuille_Ciseaux.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pierre_Feuille_Ciseaux.xcdatamodel; sourceTree = "<group>"; };
 		ECA02E17274BB0BD00197680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +54,11 @@
 		ECA02E2B274BB0BE00197680 /* Pierre_Feuille_CiseauxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pierre_Feuille_CiseauxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA02E2F274BB0BE00197680 /* Pierre_Feuille_CiseauxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pierre_Feuille_CiseauxUITests.swift; sourceTree = "<group>"; };
 		ECA02E31274BB0BE00197680 /* Pierre_Feuille_CiseauxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pierre_Feuille_CiseauxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ECA02E42274BB14600197680 /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
+		ECA02E44274BB17500197680 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		ECA02E46274BB4D800197680 /* ExtensionGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionGameController.swift; sourceTree = "<group>"; };
+		ECA02E48274BB50B00197680 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		ECA02E4A274BB8CC00197680 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +109,10 @@
 		ECA02E0A274BB0B600197680 /* Pierre_Feuille_Ciseaux */ = {
 			isa = PBXGroup;
 			children = (
-				ECA02E0B274BB0B600197680 /* AppDelegate.swift */,
-				ECA02E0D274BB0B600197680 /* SceneDelegate.swift */,
-				ECA02E0F274BB0B600197680 /* ViewController.swift */,
-				ECA02E11274BB0B600197680 /* Main.storyboard */,
-				ECA02E17274BB0BD00197680 /* Assets.xcassets */,
-				ECA02E19274BB0BD00197680 /* LaunchScreen.storyboard */,
+				ECA02E40274BB0EF00197680 /* Model */,
+				ECA02E3F274BB0E600197680 /* View */,
+				ECA02E3E274BB0D700197680 /* Controller */,
+				ECA02E41274BB0F800197680 /* Files */,
 				ECA02E1C274BB0BD00197680 /* Info.plist */,
 				ECA02E14274BB0B600197680 /* Pierre_Feuille_Ciseaux.xcdatamodeld */,
 			);
@@ -128,6 +134,44 @@
 				ECA02E31274BB0BE00197680 /* Pierre_Feuille_CiseauxUITestsLaunchTests.swift */,
 			);
 			path = Pierre_Feuille_CiseauxUITests;
+			sourceTree = "<group>";
+		};
+		ECA02E3E274BB0D700197680 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECA02E46274BB4D800197680 /* ExtensionGameController.swift */,
+				ECA02E48274BB50B00197680 /* GameController.swift */,
+				ECA02E4A274BB8CC00197680 /* HomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ECA02E3F274BB0E600197680 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECA02E11274BB0B600197680 /* Main.storyboard */,
+				ECA02E19274BB0BD00197680 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECA02E40274BB0EF00197680 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECA02E42274BB14600197680 /* GameEngine.swift */,
+				ECA02E44274BB17500197680 /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECA02E41274BB0F800197680 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECA02E17274BB0BD00197680 /* Assets.xcassets */,
+				ECA02E0D274BB0B600197680 /* SceneDelegate.swift */,
+				ECA02E0B274BB0B600197680 /* AppDelegate.swift */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +305,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA02E43274BB14600197680 /* GameEngine.swift in Sources */,
 				ECA02E16274BB0B600197680 /* Pierre_Feuille_Ciseaux.xcdatamodeld in Sources */,
-				ECA02E10274BB0B600197680 /* ViewController.swift in Sources */,
 				ECA02E0C274BB0B600197680 /* AppDelegate.swift in Sources */,
+				ECA02E47274BB4D800197680 /* ExtensionGameController.swift in Sources */,
+				ECA02E4B274BB8CC00197680 /* HomeController.swift in Sources */,
+				ECA02E45274BB17500197680 /* Player.swift in Sources */,
 				ECA02E0E274BB0B600197680 /* SceneDelegate.swift in Sources */,
+				ECA02E49274BB50B00197680 /* GameController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
