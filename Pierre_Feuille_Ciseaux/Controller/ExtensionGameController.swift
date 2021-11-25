@@ -47,18 +47,18 @@ extension GameController {
         } else if winnerStateForPlayerTwo == .Lose {
             print("lost")
             if gameEngine.gameType == .HumanVsBot {
-                updatesLabel.text = "BOT WON THE ROUND"
+                updatesLabel.text = "BOT gagne le tour!"
             } else {
-                updatesLabel.text = "BOT 1 WON THE ROUND"
+                updatesLabel.text = "BOT 1 gagne le tour!"
             }
             
             gameEngine.playerOneScored()
         } else if winnerStateForPlayerTwo == .Won {
             print("won")
             if gameEngine.gameType == .HumanVsBot {
-                updatesLabel.text = "YOU WON THE ROUND"
+                updatesLabel.text = "Tu gagne le tour!"
             } else {
-                updatesLabel.text = "BOT 2 WON THE ROUND"
+                updatesLabel.text = "BOT 2 gagne le tour!"
             }
             gameEngine.playerTwoScored()
         }
@@ -75,7 +75,7 @@ extension GameController {
             UIView.animate(withDuration: 0.5) {
                 if gameEngine.gameType == .HumanVsBot {
                     self.playerOneScoreLabel.text = "BOT: \(gameEngine.playerOne.playerScore)"
-                    self.playerTwoScoreLabel.text = "YOU: \(gameEngine.playerTwo.playerScore)"
+                    self.playerTwoScoreLabel.text = "Toi: \(gameEngine.playerTwo.playerScore)"
                 } else if  gameEngine.gameType == .BotVsBot {
                     self.playerOneScoreLabel.text = "BOT 1: \(gameEngine.playerOne.playerScore)"
                     self.playerTwoScoreLabel.text = "BOT 2: \(gameEngine.playerTwo.playerScore)"
@@ -94,16 +94,16 @@ extension GameController {
         
         if gameEngine.playerOne.playerScore > numberOfRounds && gameEngine.gameType == .HumanVsBot {
             isGameOver = true
-            returnString = "BOT WON"
+            returnString = "BOT Gagne"
         } else if gameEngine.playerTwo.playerScore > numberOfRounds && gameEngine.gameType == .HumanVsBot{
             isGameOver = true
-            returnString = "YOU WON"
+            returnString = "Tu gagne"
         } else if gameEngine.playerOne.playerScore > numberOfRounds && gameEngine.gameType == .BotVsBot {
             isGameOver = true
-            returnString = "BOT 1 WON"
+            returnString = "BOT 1 gagne"
         } else if gameEngine.playerTwo.playerScore > numberOfRounds && gameEngine.gameType == .BotVsBot{
             isGameOver = true
-            returnString = "BOT 2 WON"
+            returnString = "BOT 2 gagne"
         }
         
         if isGameOver {
