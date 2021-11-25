@@ -73,17 +73,21 @@
                             <constraint firstItem="feR-KB-AFu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="oBO-GM-kT3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="5nl-uc-cEP" kind="presentation" id="YLh-1B-zbp"/>
+                        <segue destination="INK-sj-S21" kind="presentation" id="IeT-NR-eaa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-17.39130434782609" y="90.401785714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Result Controller-->
         <scene sceneID="tq5-tP-eq2">
             <objects>
-                <viewController id="INK-sj-S21" sceneMemberID="viewController">
+                <viewController id="INK-sj-S21" customClass="ResultController" customModule="Pierre_Feuille_Ciseaux" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1lV-5l-bfU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5n-gj-WJ1">
@@ -95,6 +99,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="playAgainButtonTouched:" destination="INK-sj-S21" eventType="touchUpInside" id="NoP-15-TuU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pal-K8-qdM">
                                 <rect key="frame" x="80" y="445" width="262" height="50"/>
@@ -105,9 +112,12 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="changeModeButtonTouched:" destination="INK-sj-S21" eventType="touchUpInside" id="Stb-5r-tUg"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Félicitations c'est gagné !!!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WC-Xr-nbW">
-                                <rect key="frame" x="31" y="287" width="345" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Félicitations c'est gagné!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WC-Xr-nbW">
+                                <rect key="frame" x="31" y="287" width="314" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -121,6 +131,10 @@
                         <viewLayoutGuide key="safeArea" id="NIK-ne-aWq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="bannerImageView" destination="zYe-sY-dqh" id="sqb-Ws-ShO"/>
+                        <outlet property="resultLabel" destination="7WC-Xr-nbW" id="6kl-qc-INj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Af-va-eu0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,11 +145,11 @@
             <objects>
                 <viewController id="5nl-uc-cEP" customClass="GameController" customModule="Pierre_Feuille_Ciseaux" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Js-IO-3Ds">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hGa-JE-05x">
-                                <rect key="frame" x="15" y="744" width="384" height="118"/>
+                                <rect key="frame" x="15" y="690" width="384" height="118"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFc-mN-P3f">
                                         <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
@@ -144,16 +158,25 @@
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="rockbtn"/>
+                                        <connections>
+                                            <action selector="rockButtonTouched:" destination="5nl-uc-cEP" eventType="touchUpInside" id="UU5-SF-KjC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0q-Sc-wvy">
                                         <rect key="frame" x="133" y="0.0" width="118" height="118"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="paperbtn"/>
+                                        <connections>
+                                            <action selector="paperButtonTouched:" destination="5nl-uc-cEP" eventType="touchUpInside" id="NFn-ax-7Ll"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywI-8j-QcX">
                                         <rect key="frame" x="266" y="0.0" width="118" height="118"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="scissorsbtn"/>
+                                        <connections>
+                                            <action selector="scissorsButtonTouched:" destination="5nl-uc-cEP" eventType="touchUpInside" id="mqF-IR-mre"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -165,7 +188,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kq5-tI-u6E">
-                                <rect key="frame" x="169" y="324" width="106" height="36"/>
+                                <rect key="frame" x="169" y="221" width="106" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -183,9 +206,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJs-aA-pz5">
-                                <rect key="frame" x="172" y="361" width="101" height="96"/>
+                                <rect key="frame" x="172" y="265" width="101" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U3F-DM-Jpq">
+                                <rect key="frame" x="102" y="384" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edM-1E-wAf">
+                                        <rect key="frame" x="109" y="43" width="23" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q5h-7p-gWu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -195,6 +232,18 @@
                             <constraint firstItem="hGa-JE-05x" firstAttribute="leading" secondItem="Q5h-7p-gWu" secondAttribute="leading" constant="15" id="lds-IC-MK8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="paperButton" destination="q0q-Sc-wvy" id="nm0-ys-bQU"/>
+                        <outlet property="playerOneScoreLabel" destination="Kq5-tI-u6E" id="ecK-JA-KmK"/>
+                        <outlet property="playerOneSelectionImageView" destination="pJs-aA-pz5" id="pI6-x0-ktc"/>
+                        <outlet property="playerTwoScoreLabel" destination="5rk-ak-ErP" id="hzg-XM-9ZG"/>
+                        <outlet property="playerTwoSelectionImageView" destination="iWg-sU-nZU" id="Ahs-bF-Sto"/>
+                        <outlet property="rockButton" destination="JFc-mN-P3f" id="MRT-Fy-hjP"/>
+                        <outlet property="scissorButton" destination="ywI-8j-QcX" id="7Lo-n4-OCt"/>
+                        <outlet property="timerLabel" destination="edM-1E-wAf" id="vh4-hS-JYC"/>
+                        <outlet property="timerView" destination="U3F-DM-Jpq" id="8ik-1H-6fl"/>
+                        <outlet property="updatesLabel" destination="VFA-7r-h3l" id="hBN-uk-bAE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cq7-07-hvm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
