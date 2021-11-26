@@ -42,10 +42,10 @@ extension GameController {
         
         let winnerStateForPlayerTwo = gameEngine.checkWinner(selectionOne: botSelection, selectionTwo: selection)
         if winnerStateForPlayerTwo == .Draw {
-            print("draw")
-            updatesLabel.text = "DRAW"
+            print("Egalité")
+            updatesLabel.text = "Egalité"
         } else if winnerStateForPlayerTwo == .Lose {
-            print("lost")
+            print("Perdu")
             if gameEngine.gameType == .HumanVsBot {
                 updatesLabel.text = "BOT gagne le tour!"
             } else {
@@ -54,7 +54,7 @@ extension GameController {
             
             gameEngine.playerOneScored()
         } else if winnerStateForPlayerTwo == .Won {
-            print("won")
+            print("Gagné")
             if gameEngine.gameType == .HumanVsBot {
                 updatesLabel.text = "Tu gagne le tour!"
             } else {

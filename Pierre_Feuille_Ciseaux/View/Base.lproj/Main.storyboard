@@ -11,7 +11,7 @@
         <!--Home Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeController" customModule="Pierre_Feuille_Ciseaux" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeControllerId" id="BYZ-38-t0r" customClass="HomeController" customModule="Pierre_Feuille_Ciseaux" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,8 +74,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="5nl-uc-cEP" kind="presentation" id="YLh-1B-zbp"/>
-                        <segue destination="INK-sj-S21" kind="presentation" id="IeT-NR-eaa"/>
+                        <segue destination="5nl-uc-cEP" kind="presentation" identifier="gamesegue" id="yTG-qa-zAN"/>
+                        <segue destination="INK-sj-S21" kind="presentation" identifier="resultsegue" id="puI-tg-ubE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -85,7 +85,7 @@
         <!--Result Controller-->
         <scene sceneID="tq5-tP-eq2">
             <objects>
-                <viewController id="INK-sj-S21" customClass="ResultController" customModule="Pierre_Feuille_Ciseaux" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultControllerId" id="INK-sj-S21" customClass="ResultController" customModule="Pierre_Feuille_Ciseaux" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1lV-5l-bfU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,7 +143,7 @@
         <!--Game Controller-->
         <scene sceneID="TeQ-ZA-9Ya">
             <objects>
-                <viewController id="5nl-uc-cEP" customClass="GameController" customModule="Pierre_Feuille_Ciseaux" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameControllerId" id="5nl-uc-cEP" customClass="GameController" customModule="Pierre_Feuille_Ciseaux" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Js-IO-3Ds">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
