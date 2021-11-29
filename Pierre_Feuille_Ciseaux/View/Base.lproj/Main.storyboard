@@ -160,12 +160,12 @@
         <scene sceneID="TeQ-ZA-9Ya">
             <objects>
                 <viewController storyboardIdentifier="GameControllerId" id="5nl-uc-cEP" customClass="GameController" customModule="Pierre_Feuille_Ciseaux" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="3Js-IO-3Ds">
+                    <view key="view" contentMode="scaleToFill" id="3Js-IO-3Ds">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hGa-JE-05x">
-                                <rect key="frame" x="69" y="690" width="330" height="100"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="hGa-JE-05x">
+                                <rect key="frame" x="30" y="690" width="348" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFc-mN-P3f">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -179,7 +179,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0q-Sc-wvy">
-                                        <rect key="frame" x="115" y="0.0" width="100" height="100"/>
+                                        <rect key="frame" x="124" y="0.0" width="100" height="100"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="paperbtn"/>
                                         <connections>
@@ -187,7 +187,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywI-8j-QcX">
-                                        <rect key="frame" x="230" y="0.0" width="100" height="100"/>
+                                        <rect key="frame" x="248" y="0.0" width="100" height="100"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" backgroundImage="scissorsbtn"/>
                                         <connections>
@@ -196,9 +196,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFA-7r-h3l">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFA-7r-h3l">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -254,6 +253,9 @@
                         <viewLayoutGuide key="safeArea" id="Q5h-7p-gWu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VFA-7r-h3l" secondAttribute="trailing" id="2aA-zn-fg3"/>
+                            <constraint firstAttribute="bottom" secondItem="VFA-7r-h3l" secondAttribute="bottom" id="4Hc-Rl-T3a"/>
+                            <constraint firstItem="VFA-7r-h3l" firstAttribute="top" secondItem="Q5h-7p-gWu" secondAttribute="top" id="5Ie-xF-ESO"/>
                             <constraint firstItem="iWg-sU-nZU" firstAttribute="leading" secondItem="Q5h-7p-gWu" secondAttribute="leading" constant="100" id="6EZ-3k-PgQ"/>
                             <constraint firstItem="5rk-ak-ErP" firstAttribute="top" secondItem="iWg-sU-nZU" secondAttribute="bottom" constant="30" id="AVa-Tg-HGS"/>
                             <constraint firstItem="5rk-ak-ErP" firstAttribute="leading" secondItem="3Js-IO-3Ds" secondAttribute="leadingMargin" constant="100" id="EMx-yU-yiG"/>
@@ -271,6 +273,7 @@
                             <constraint firstItem="Kq5-tI-u6E" firstAttribute="leading" secondItem="Q5h-7p-gWu" secondAttribute="leading" constant="100" id="eKQ-sQ-DRz"/>
                             <constraint firstItem="Kq5-tI-u6E" firstAttribute="centerX" secondItem="3Js-IO-3Ds" secondAttribute="centerX" id="h7P-R3-DFR"/>
                             <constraint firstItem="Q5h-7p-gWu" firstAttribute="trailing" secondItem="pJs-aA-pz5" secondAttribute="trailing" constant="100" id="iRo-Sj-x3a"/>
+                            <constraint firstItem="VFA-7r-h3l" firstAttribute="leading" secondItem="3Js-IO-3Ds" secondAttribute="leading" id="miE-A5-HR7"/>
                             <constraint firstItem="U3F-DM-Jpq" firstAttribute="centerY" secondItem="3Js-IO-3Ds" secondAttribute="centerY" id="nri-TE-Oig"/>
                             <constraint firstItem="Q5h-7p-gWu" firstAttribute="trailing" secondItem="U3F-DM-Jpq" secondAttribute="trailing" constant="130" id="qbF-Jd-ZJA"/>
                             <constraint firstItem="pJs-aA-pz5" firstAttribute="leading" secondItem="Q5h-7p-gWu" secondAttribute="leading" constant="100" id="vXd-lH-ffR"/>
