@@ -1,11 +1,11 @@
 //
-//  ExtensionGameController.swift
+//  GameController+Game.swift
 //  Pierre_Feuille_Ciseaux
 //
-//  Created by marhuenda joris on 22/11/2021.
+//  Created by marhuenda joris on 14/12/2021.
 //
 
-import SwiftUI
+import UIKit
 
 extension GameController {
     //MARK:- Game logics
@@ -42,23 +42,23 @@ extension GameController {
         
         let winnerStateForPlayerTwo = gameEngine.checkWinner(selectionOne: botSelection, selectionTwo: selection)
         if winnerStateForPlayerTwo == .Draw {
-            print("Egalité")
-            updatesLabel.text = "Egalité"
+            print("draw")
+            updatesLabel.text = "DRAW"
         } else if winnerStateForPlayerTwo == .Lose {
-            print("Perdu")
+            print("lost")
             if gameEngine.gameType == .HumanVsBot {
-                updatesLabel.text = "BOT gagne le tour!"
+                updatesLabel.text = "BOT WON THE ROUND"
             } else {
-                updatesLabel.text = "BOT 1 gagne le tour!"
+                updatesLabel.text = "BOT 1 WON THE ROUND"
             }
             
             gameEngine.playerOneScored()
         } else if winnerStateForPlayerTwo == .Won {
-            print("Gagné")
+            print("won")
             if gameEngine.gameType == .HumanVsBot {
-                updatesLabel.text = "Tu gagne le tour!"
+                updatesLabel.text = "YOU WON THE ROUND"
             } else {
-                updatesLabel.text = "BOT 2 gagne le tour!"
+                updatesLabel.text = "BOT 2 WON THE ROUND"
             }
             gameEngine.playerTwoScored()
         }
@@ -75,7 +75,7 @@ extension GameController {
             UIView.animate(withDuration: 0.5) {
                 if gameEngine.gameType == .HumanVsBot {
                     self.playerOneScoreLabel.text = "BOT: \(gameEngine.playerOne.playerScore)"
-                    self.playerTwoScoreLabel.text = "Toi: \(gameEngine.playerTwo.playerScore)"
+                    self.playerTwoScoreLabel.text = "YOU: \(gameEngine.playerTwo.playerScore)"
                 } else if  gameEngine.gameType == .BotVsBot {
                     self.playerOneScoreLabel.text = "BOT 1: \(gameEngine.playerOne.playerScore)"
                     self.playerTwoScoreLabel.text = "BOT 2: \(gameEngine.playerTwo.playerScore)"
@@ -94,16 +94,16 @@ extension GameController {
         
         if gameEngine.playerOne.playerScore > numberOfRounds && gameEngine.gameType == .HumanVsBot {
             isGameOver = true
-            returnString = "BOT Gagne"
+            returnString = "BOT WON"
         } else if gameEngine.playerTwo.playerScore > numberOfRounds && gameEngine.gameType == .HumanVsBot{
             isGameOver = true
-            returnString = "Tu gagne"
+            returnString = "YOU WON"
         } else if gameEngine.playerOne.playerScore > numberOfRounds && gameEngine.gameType == .BotVsBot {
             isGameOver = true
-            returnString = "BOT 1 gagne"
+            returnString = "BOT 1 WON"
         } else if gameEngine.playerTwo.playerScore > numberOfRounds && gameEngine.gameType == .BotVsBot{
             isGameOver = true
-            returnString = "BOT 2 gagne"
+            returnString = "BOT 2 WON"
         }
         
         if isGameOver {

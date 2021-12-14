@@ -18,10 +18,10 @@
 		ECA02E32274BB0BE00197680 /* Pierre_Feuille_CiseauxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E31274BB0BE00197680 /* Pierre_Feuille_CiseauxUITestsLaunchTests.swift */; };
 		ECA02E43274BB14600197680 /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E42274BB14600197680 /* GameEngine.swift */; };
 		ECA02E45274BB17500197680 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E44274BB17500197680 /* Player.swift */; };
-		ECA02E47274BB4D800197680 /* ExtensionGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E46274BB4D800197680 /* ExtensionGameController.swift */; };
 		ECA02E49274BB50B00197680 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E48274BB50B00197680 /* GameController.swift */; };
 		ECA02E4B274BB8CC00197680 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E4A274BB8CC00197680 /* HomeController.swift */; };
 		ECA02E932750295C00197680 /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA02E922750295B00197680 /* ResultController.swift */; };
+		ECE84B9F276809A300A496DB /* GameController+Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE84B9E276809A300A496DB /* GameController+Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +57,10 @@
 		ECA02E31274BB0BE00197680 /* Pierre_Feuille_CiseauxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pierre_Feuille_CiseauxUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ECA02E42274BB14600197680 /* GameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
 		ECA02E44274BB17500197680 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		ECA02E46274BB4D800197680 /* ExtensionGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionGameController.swift; sourceTree = "<group>"; };
 		ECA02E48274BB50B00197680 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		ECA02E4A274BB8CC00197680 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		ECA02E922750295B00197680 /* ResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
+		ECE84B9E276809A300A496DB /* GameController+Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameController+Game.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,10 +141,10 @@
 		ECA02E3E274BB0D700197680 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				ECA02E46274BB4D800197680 /* ExtensionGameController.swift */,
 				ECA02E48274BB50B00197680 /* GameController.swift */,
 				ECA02E4A274BB8CC00197680 /* HomeController.swift */,
 				ECA02E922750295B00197680 /* ResultController.swift */,
+				ECE84B9E276809A300A496DB /* GameController+Game.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -308,11 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE84B9F276809A300A496DB /* GameController+Game.swift in Sources */,
 				ECA02E43274BB14600197680 /* GameEngine.swift in Sources */,
 				ECA02E16274BB0B600197680 /* Pierre_Feuille_Ciseaux.xcdatamodeld in Sources */,
 				ECA02E932750295C00197680 /* ResultController.swift in Sources */,
 				ECA02E0C274BB0B600197680 /* AppDelegate.swift in Sources */,
-				ECA02E47274BB4D800197680 /* ExtensionGameController.swift in Sources */,
 				ECA02E4B274BB8CC00197680 /* HomeController.swift in Sources */,
 				ECA02E45274BB17500197680 /* Player.swift in Sources */,
 				ECA02E0E274BB0B600197680 /* SceneDelegate.swift in Sources */,
@@ -501,6 +501,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -512,7 +513,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -529,6 +530,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -540,7 +542,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -20,7 +20,7 @@ class ResultController: UIViewController {
         if let receivedGE = gameEngine {
             resultLabel.text = receivedGE.resultString
             
-            if receivedGE.resultString == "Félicitations c'est gagné!!" && receivedGE.gameType == .HumanVsBot {
+            if receivedGE.resultString == "YOU WON" && receivedGE.gameType == .HumanVsBot {
                 bannerImageView.image = UIImage(named: "wonboy")
             } else {
                 bannerImageView.image = UIImage(named: "robot")
