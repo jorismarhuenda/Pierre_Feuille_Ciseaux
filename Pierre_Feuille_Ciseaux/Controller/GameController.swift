@@ -69,13 +69,25 @@ class GameController: UIViewController {
     
     @IBAction func rockButtonTouched(_ sender: Any) {
         buttonTouchedActions(selection: .Rock)
+        self.timerView.isHidden = true
+        self.timer?.invalidate()
+        sleep(2)
+        self.startTimer()
     }
     
     @IBAction func paperButtonTouched(_ sender: Any) {
         buttonTouchedActions(selection: .Paper)
+        self.timerView.isHidden = true
+        self.timer?.invalidate()
+        sleep(2)
+        self.startTimer()
     }
     
     @IBAction func scissorsButtonTouched(_ sender: Any) {
         buttonTouchedActions(selection: .Scissors)
+        self.timerView.isHidden = true
+        self.timer?.invalidate()
+        sleep(2)
+        self.startTimer()
     }
 }

@@ -135,9 +135,9 @@ extension GameController {
     func startTimer() {
         if let gameEngine = self.gameEngine {
             timerCount = gameEngine.waitingTime
-            self.timerView.isHidden = false
             timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (currTimer) in
                 if self.timerCount >= 0 {
+                    self.timerView.isHidden = false
                     self.timerLabel.text = "\(self.timerCount)"
                     self.timerCount -= 1
                 } else {
@@ -147,12 +147,10 @@ extension GameController {
                     if let gameEngine = self.gameEngine {
                         gameEngine.playerOneScored()
                     }
-                    
                     self.updateGameScore()
                     self.timerCount = gameEngine.waitingTime
                     self.startTimer()
                 }
-                
                 self.checkGameStatus()
             }
         }
