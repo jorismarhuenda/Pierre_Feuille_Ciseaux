@@ -71,7 +71,6 @@ class GameController: UIViewController {
         buttonTouchedActions(selection: .Rock)
         self.timerView.isHidden = true
         self.timer?.invalidate()
-        sleep(2)
         self.startTimer()
     }
     
@@ -79,7 +78,6 @@ class GameController: UIViewController {
         buttonTouchedActions(selection: .Paper)
         self.timerView.isHidden = true
         self.timer?.invalidate()
-        sleep(2)
         self.startTimer()
     }
     
@@ -87,7 +85,6 @@ class GameController: UIViewController {
         buttonTouchedActions(selection: .Scissors)
         self.timerView.isHidden = true
         self.timer?.invalidate()
-        sleep(2)
         self.startTimer()
     }
 }
